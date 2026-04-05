@@ -7,18 +7,33 @@ from app.core.config import settings
 
 logger = logging.getLogger(__name__)
 
-# Use Anthropic when key is set, otherwise Ollama
-USE_OLLAMA = not settings.anthropic_api_key
+# ---------- Provider detection ----------
 
-if not USE_OLLAMA:
+def _detect_provider() -> str:
+    """Determine LLM provider from settings. Priority: explicit setting > anthropic > perplexity > ollama."""
+    if settings.llm_provider:
+        return settings.llm_provider.lower()
+    if settings.anthropic_api_key:
+        return "anthropic"
+    if settings.perplexity_api_key:
+        return "perplexity"
+    return "ollama"
+
+LLM_PROVIDER = _detect_provider()
+logger.info("LLM provider: %s", LLM_PROVIDER)
+
+# Init Anthropic client if needed
+if LLM_PROVIDER == "anthropic":
     import anthropic
-    client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
+    _anthropic_client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
     SONNET_MODEL = "claude-sonnet-4-6-20250514"
     HAIKU_MODEL = "claude-haiku-4-5-20251001"
 else:
-    client = None
-    logger.info("Using Ollama (%s) at %s", settings.ollama_model, settings.ollama_base_url)
+    _anthropic_client = None
+    SONNET_MODEL = HAIKU_MODEL = ""
 
+
+# ---------- System prompts ----------
 
 ANALYSIS_SYSTEM_PROMPT = """You are GrowthPilot's audit analyst. You analyze local business digital presence data and identify gaps and strengths compared to competitors.
 
@@ -62,68 +77,6 @@ Always respond with valid JSON:
 
 Respond ONLY with the JSON object, no markdown, no explanation."""
 
-
-async def _call_ollama(system: str, user_message: str) -> str:
-    """Call Ollama's chat API. Creates a fresh client per call to avoid event loop issues in Celery."""
-    headers = {}
-    if settings.ollama_api_key:
-        headers["Authorization"] = f"Bearer {settings.ollama_api_key}"
-
-    async with httpx.AsyncClient(base_url=settings.ollama_base_url, timeout=120.0, headers=headers) as client:
-        response = await client.post(
-            "/api/chat",
-            json={
-                "model": settings.ollama_model,
-                "messages": [
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": user_message},
-                ],
-                "stream": False,
-                "format": "json",
-            },
-        )
-    response.raise_for_status()
-    data = response.json()
-    return data["message"]["content"]
-
-
-async def _call_anthropic(model: str, system: str, user_message: str, max_tokens: int) -> str:
-    """Call Anthropic Claude API."""
-    message = await client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        system=system,
-        messages=[{"role": "user", "content": user_message}],
-    )
-    return message.content[0].text
-
-
-async def _call_llm(system: str, user_message: str, model: str = "sonnet", max_tokens: int = 2000) -> str:
-    """Route to Ollama or Anthropic based on config."""
-    if USE_OLLAMA:
-        return await _call_ollama(system, user_message)
-    else:
-        anthropic_model = SONNET_MODEL if model == "sonnet" else HAIKU_MODEL
-        return await _call_anthropic(anthropic_model, system, user_message, max_tokens)
-
-
-def _parse_json(text: str):
-    """Parse JSON from LLM response, handling common formatting issues."""
-    text = text.strip()
-    # Strip markdown fences
-    if text.startswith("```"):
-        lines = text.split("\n")
-        lines = [l for l in lines if not l.strip().startswith("```")]
-        text = "\n".join(lines).strip()
-    parsed = json.loads(text)
-    # Ollama sometimes wraps arrays in {"missions": [...]} or {"results": [...]}
-    if isinstance(parsed, dict):
-        for key in ("missions", "results", "items", "data"):
-            if key in parsed and isinstance(parsed[key], list):
-                return parsed[key]
-    return parsed
-
-
 CONTENT_QUALITY_PROMPT = """You are analyzing a local business website. Rate the content quality.
 
 Respond with valid JSON:
@@ -137,31 +90,6 @@ Respond with valid JSON:
 }
 
 Respond ONLY with JSON."""
-
-
-async def assess_content_quality(business_name: str, content: str) -> dict:
-    """Assess website content quality using AI."""
-    if not content or len(content) < 100:
-        return {
-            "quality": "low",
-            "summary": "Very little or no content found",
-            "has_business_info": False,
-            "has_contact_info": False,
-            "has_product_details": False,
-            "has_clear_cta": False,
-        }
-
-    # Truncate to first 2000 chars to save tokens
-    truncated = content[:2000]
-
-    text = await _call_llm(
-        CONTENT_QUALITY_PROMPT,
-        f"Assess this website content for {business_name}:\n\n{truncated}",
-        model="haiku",
-        max_tokens=500,
-    )
-    return _parse_json(text)
-
 
 REVIEW_ANALYSIS_PROMPT = """You are analyzing customer reviews for a local business. Given these reviews, provide structured insights.
 
@@ -179,12 +107,121 @@ Always respond with valid JSON:
 Respond ONLY with the JSON object, no markdown, no explanation."""
 
 
+# ---------- Provider call functions ----------
+
+async def _call_ollama(system: str, user_message: str) -> str:
+    """Call Ollama's chat API."""
+    headers = {}
+    if settings.ollama_api_key:
+        headers["Authorization"] = f"Bearer {settings.ollama_api_key}"
+
+    async with httpx.AsyncClient(base_url=settings.ollama_base_url, timeout=120.0, headers=headers) as c:
+        response = await c.post(
+            "/api/chat",
+            json={
+                "model": settings.ollama_model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user_message},
+                ],
+                "stream": False,
+                "format": "json",
+            },
+        )
+    response.raise_for_status()
+    return response.json()["message"]["content"]
+
+
+async def _call_anthropic(model: str, system: str, user_message: str, max_tokens: int) -> str:
+    """Call Anthropic Claude API."""
+    message = await _anthropic_client.messages.create(
+        model=model,
+        max_tokens=max_tokens,
+        system=system,
+        messages=[{"role": "user", "content": user_message}],
+    )
+    return message.content[0].text
+
+
+async def _call_perplexity(system: str, user_message: str, max_tokens: int = 2000) -> str:
+    """Call Perplexity Sonar API (OpenAI-compatible chat completions)."""
+    async with httpx.AsyncClient(timeout=120.0) as c:
+        response = await c.post(
+            "https://api.perplexity.ai/chat/completions",
+            headers={
+                "Authorization": f"Bearer {settings.perplexity_api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": settings.perplexity_model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user_message},
+                ],
+                "max_tokens": max_tokens,
+            },
+        )
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"]
+
+
+async def _call_llm(system: str, user_message: str, model: str = "sonnet", max_tokens: int = 2000) -> str:
+    """Route to the configured LLM provider."""
+    if LLM_PROVIDER == "anthropic":
+        anthropic_model = SONNET_MODEL if model == "sonnet" else HAIKU_MODEL
+        return await _call_anthropic(anthropic_model, system, user_message, max_tokens)
+    elif LLM_PROVIDER == "perplexity":
+        return await _call_perplexity(system, user_message, max_tokens)
+    else:
+        return await _call_ollama(system, user_message)
+
+
+# ---------- JSON parsing ----------
+
+def _parse_json(text: str):
+    """Parse JSON from LLM response, handling common formatting issues."""
+    text = text.strip()
+    if text.startswith("```"):
+        lines = text.split("\n")
+        lines = [l for l in lines if not l.strip().startswith("```")]
+        text = "\n".join(lines).strip()
+    parsed = json.loads(text)
+    if isinstance(parsed, dict):
+        for key in ("missions", "results", "items", "data"):
+            if key in parsed and isinstance(parsed[key], list):
+                return parsed[key]
+    return parsed
+
+
+# ---------- Public API ----------
+
+async def assess_content_quality(business_name: str, content: str) -> dict:
+    """Assess website content quality using AI."""
+    if not content or len(content) < 100:
+        return {
+            "quality": "low",
+            "summary": "Very little or no content found",
+            "has_business_info": False,
+            "has_contact_info": False,
+            "has_product_details": False,
+            "has_clear_cta": False,
+        }
+
+    truncated = content[:2000]
+    text = await _call_llm(
+        CONTENT_QUALITY_PROMPT,
+        f"Assess this website content for {business_name}:\n\n{truncated}",
+        model="haiku",
+        max_tokens=500,
+    )
+    return _parse_json(text)
+
+
 async def analyze_reviews(business_name: str, reviews: list[dict]) -> dict:
     """Analyze customer reviews using AI."""
     if not reviews:
         return {"summary": "No reviews to analyze", "top_praised": [], "top_complaints": [], "keyword_insights": [], "sentiment": "unknown", "improvement_suggestions": [], "review_quality": "low"}
 
-    # Format reviews for the prompt
     review_texts = []
     for r in reviews[:20]:
         rating = int(r.get('rating') or 0)
@@ -207,7 +244,7 @@ Identify what customers love, what they complain about, and what the business sh
 
 
 async def analyze_audit_data(brand_name: str, audit_dimensions: dict, competitor_data: list[dict]) -> dict:
-    if settings.dev_mode and not settings.anthropic_api_key and USE_OLLAMA is False:
+    if settings.dev_mode and LLM_PROVIDER == "ollama":
         from app.services.mock import mock_analysis
         return mock_analysis(brand_name)
 
@@ -224,7 +261,7 @@ Identify gaps, strengths, and priority improvement areas."""
 
 
 async def generate_missions(brand_name: str, analysis: dict, brand_voice: str, website_url: str = "") -> list[dict]:
-    if settings.dev_mode and not settings.anthropic_api_key and USE_OLLAMA is False:
+    if settings.dev_mode and LLM_PROVIDER == "ollama":
         from app.services.mock import mock_missions
         return mock_missions(brand_name)
 
@@ -240,15 +277,11 @@ Prioritize missions that address the biggest gaps with the highest impact. Each 
 
     text = await _call_llm(MISSIONS_SYSTEM_PROMPT, user_message, model="sonnet")
     result = _parse_json(text)
-    # Ensure we return a list of mission dicts
     if isinstance(result, dict):
-        # Check if it's a wrapper with a list inside
         for v in result.values():
             if isinstance(v, list):
                 return v
-        # Single mission returned as a dict — wrap it
         if "title" in result:
-            logger.info("Ollama returned single mission, wrapping in list")
             return [result]
         logger.warning("generate_missions got unexpected dict: %s", list(result.keys()))
         return []
@@ -256,7 +289,7 @@ Prioritize missions that address the biggest gaps with the highest impact. Each 
 
 
 async def generate_content(mission_title: str, channel: str, brand_name: str, brand_voice: str, context: dict) -> dict:
-    if settings.dev_mode and not settings.anthropic_api_key and USE_OLLAMA is False:
+    if settings.dev_mode and LLM_PROVIDER == "ollama":
         from app.services.mock import mock_content
         return mock_content(mission_title, channel, brand_name)
 

@@ -35,7 +35,14 @@ class Settings(BaseSettings):
     telegram_bot_token: str = ""
     resend_api_key: str = ""
 
-    # Ollama (local LLM — used when anthropic_api_key is empty)
+    # LLM provider: "anthropic", "perplexity", or "ollama"
+    llm_provider: str = ""  # auto-detect if empty: anthropic > perplexity > ollama
+
+    # Perplexity
+    perplexity_api_key: str = ""
+    perplexity_model: str = "sonar"
+
+    # Ollama (local LLM fallback)
     ollama_base_url: str = "http://localhost:11434"
     ollama_model: str = "llama3.2"
     ollama_api_key: str = ""
