@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Azure Meridian - Brand Identity Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#390c00",
+              "primary": "#0037b0",
+              "outline": "#747686",
+              "on-tertiary-container": "#ffc9b7",
+              "on-secondary-container": "#fefcff",
+              "surface-container": "#eceef0",
+              "surface-bright": "#f7f9fb",
+              "inverse-on-surface": "#eff1f3",
+              "surface-container-low": "#f2f4f6",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#d8e2ff",
+              "on-tertiary-fixed-variant": "#832700",
+              "on-secondary": "#ffffff",
+              "tertiary": "#7f2500",
+              "on-background": "#191c1e",
+              "tertiary-container": "#a73400",
+              "surface-tint": "#2151da",
+              "surface-dim": "#d8dadc",
+              "on-secondary-fixed": "#001a42",
+              "background": "#f7f9fb",
+              "inverse-surface": "#2d3133",
+              "primary-fixed-dim": "#b7c4ff",
+              "on-primary-container": "#cad3ff",
+              "on-primary-fixed": "#001551",
+              "surface-container-high": "#e6e8ea",
+              "inverse-primary": "#b7c4ff",
+              "secondary-fixed-dim": "#adc6ff",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-container-highest": "#e0e3e5",
+              "primary-fixed": "#dce1ff",
+              "secondary": "#0058be",
+              "on-secondary-fixed-variant": "#004395",
+              "on-surface": "#191c1e",
+              "primary-container": "#1d4ed8",
+              "on-surface-variant": "#434655",
+              "tertiary-fixed-dim": "#ffb59c",
+              "surface": "#f7f9fb",
+              "secondary-container": "#2170e4",
+              "outline-variant": "#c4c5d7",
+              "on-primary-fixed-variant": "#0039b5",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 dark:bg-slate-900/80 backdrop-blur-xl flex justify-between items-center px-8 h-16 w-full">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-[#191c1e] dark:text-white">Azure Meridian</span>
+<div class="hidden md:flex items-center gap-6 font-manrope text-sm font-medium tracking-tight">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#1D4ED8] transition-colors" href="#">Dashboard</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#1D4ED8] transition-colors" href="#">Analytics</a>
+<a class="text-[#1D4ED8] font-bold border-b-2 border-[#1D4ED8] pb-1" href="#">Settings</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center overflow-hidden">
+<img alt="User profile" data-alt="professional headshot of a creative director in a minimalist studio setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5gkjzLZ5p0iGKEgvNvNceXECSWB8Kt3bUGorAnfeQ9nNauKwhnloYFlmA57SwzwA5VJPERAfRbTWS-_qAlHT3Jj2xMle6X-1gN5-wS6suMmCDao688hkr6TF8aEKZrd-JmVJsLwUkQ4zVP0WSRRdeNpwvTPtmCciRYx2CtiDvwwnoozi21QbBdkTHeRXpFyfRBqcXMHB_dpMNxawl50brH6izGFBtQX3_Lt6KDIVDkVxLvQw57jOP7LU1lJ7xAHjX669B6VObU0eg"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full flex flex-col p-4 pt-20 w-64 bg-[#f2f4f6] dark:bg-slate-800 z-40">
+<div class="mb-8 px-4">
+<h2 class="font-manrope font-bold text-[#191c1e] dark:text-white text-lg">Settings</h2>
+<p class="font-manrope text-xs text-on-surface-variant opacity-70">Manage your preferences</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all font-manrope text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="manage_accounts">manage_accounts</span>
+                Account
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#1D4ED8] bg-white dark:bg-slate-700 rounded-lg font-bold font-manrope text-sm shadow-sm" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                Brand Identity
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all font-manrope text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+                Subscription
+            </a>
+</nav>
+<div class="mt-auto space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:bg-white/50 transition-all font-manrope text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+                Help Center
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-error hover:bg-error-container/20 transition-all font-manrope text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                Sign Out
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pl-64 pt-16 min-h-screen">
+<div class="max-w-4xl mx-auto p-12">
+<!-- Header Section -->
+<header class="mb-12">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Brand Identity</h1>
+<p class="text-lg text-on-surface-variant font-body max-w-2xl">Define your brand's core essence to ensure all generated content remains consistent and professional.</p>
+</header>
+<!-- Settings Form Container -->
+<div class="space-y-8">
+<!-- Business Description Card -->
+<section class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(25,28,30,0.04)]">
+<div class="flex items-start justify-between mb-6">
+<div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-1">Business Description</h3>
+<p class="text-sm text-on-surface-variant">Describe your products, services, and core mission.</p>
+</div>
+<span class="material-symbols-outlined text-primary/40" data-icon="info">info</span>
+</div>
+<div class="relative group">
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-on-surface font-body placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all min-h-[160px] resize-none" placeholder="Azure Meridian is a boutique architectural consultancy specializing in sustainable urban development..."></textarea>
+<div class="absolute bottom-4 right-4 text-[10px] font-bold text-on-surface-variant tracking-widest uppercase opacity-40">
+                            0 / 1000
+                        </div>
+</div>
+</section>
+<!-- Core Keywords Card -->
+<section class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(25,28,30,0.04)]">
+<div class="mb-6">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-1">Core Keywords</h3>
+<p class="text-sm text-on-surface-variant">Keywords that define your brand's unique market position.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold">
+                            Architectural
+                            <button class="material-symbols-outlined text-[14px]" data-icon="close">close</button>
+</span>
+<span class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold">
+                            Minimalist
+                            <button class="material-symbols-outlined text-[14px]" data-icon="close">close</button>
+</span>
+<span class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold">
+                            Sustainable
+                            <button class="material-symbols-outlined text-[14px]" data-icon="close">close</button>
+</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 pl-12 text-on-surface font-body placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Add more keywords..." type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant opacity-40" data-icon="add">add</span>
+</div>
+</section>
+<!-- Tone of Voice Bento-style Selection -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_-15px_rgba(25,28,30,0.04)] md:col-span-2">
+<div class="mb-8">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-1">Tone of Voice</h3>
+<p class="text-sm text-on-surface-variant">Select the primary personality of your communication.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Radio Option 1 -->
+<label class="relative flex flex-col p-6 rounded-xl cursor-pointer bg-surface-container-low hover:bg-surface-container border-2 border-transparent transition-all group has-[:checked]:border-primary has-[:checked]:bg-white">
+<input checked="" class="sr-only" name="tone" type="radio"/>
+<span class="material-symbols-outlined text-primary mb-3 text-3xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline font-bold text-on-surface">Professional</span>
+<span class="text-xs text-on-surface-variant mt-1 leading-relaxed">Authoritative, clear, and trustworthy communication.</span>
+<div class="absolute top-4 right-4 opacity-0 group-has-[:checked]:opacity-100">
+<div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+</label>
+<!-- Radio Option 2 -->
+<label class="relative flex flex-col p-6 rounded-xl cursor-pointer bg-surface-container-low hover:bg-surface-container border-2 border-transparent transition-all group has-[:checked]:border-primary has-[:checked]:bg-white">
+<input class="sr-only" name="tone" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant mb-3 text-3xl opacity-40" data-icon="mood">mood</span>
+<span class="font-headline font-bold text-on-surface">Friendly</span>
+<span class="text-xs text-on-surface-variant mt-1 leading-relaxed">Casual, approachable, and highly engaging style.</span>
+<div class="absolute top-4 right-4 opacity-0 group-has-[:checked]:opacity-100">
+<div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+</label>
+<!-- Radio Option 3 -->
+<label class="relative flex flex-col p-6 rounded-xl cursor-pointer bg-surface-container-low hover:bg-surface-container border-2 border-transparent transition-all group has-[:checked]:border-primary has-[:checked]:bg-white">
+<input class="sr-only" name="tone" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant mb-3 text-3xl opacity-40" data-icon="lightbulb">lightbulb</span>
+<span class="font-headline font-bold text-on-surface">Innovative</span>
+<span class="text-xs text-on-surface-variant mt-1 leading-relaxed">Bold, forward-thinking, and creative expression.</span>
+<div class="absolute top-4 right-4 opacity-0 group-has-[:checked]:opacity-100">
+<div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[12px] font-bold" data-icon="check">check</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- Action Footer -->
+<footer class="flex items-center justify-end gap-4 pt-4">
+<button class="px-6 py-2.5 text-sm font-bold text-on-surface-variant hover:bg-surface-container rounded-lg transition-colors">
+                        Discard Changes
+                    </button>
+<button class="px-8 py-2.5 bg-gradient-to-br from-primary to-primary-container text-on-primary text-sm font-bold rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+                        Save Identity
+                    </button>
+</footer>
+</div>
+</div>
+</main>
+</body></html>

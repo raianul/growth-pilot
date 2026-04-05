@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+*.env.local
+.mcp.json
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+
+# Node
+node_modules/
+.next/
+.turbo/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+.playwright-mcp/
+*.png
+
+# Local tooling
+.superpowers/
+.mcp.json
+celerybeat-schedule

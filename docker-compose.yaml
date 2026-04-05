@@ -1,0 +1,94 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: growthpilot
+      POSTGRES_PASSWORD: growthpilot
+      POSTGRES_DB: growthpilot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U growthpilot"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      DATABASE_URL: postgresql+asyncpg://growthpilot:growthpilot@postgres:5432/growthpilot
+      REDIS_URL: redis://redis:6379/0
+      DEV_MODE: "false"
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: kimi-k2.5:cloud
+      OLLAMA_API_KEY: db44fd430e994c9a820dea394beac4fa.5sT3ca2ozXVVdHbf6y4GJ4qj
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ./backend
+    command: celery -A app.tasks worker --loglevel=info --concurrency=4
+    volumes:
+      - ./backend:/app
+    environment:
+      DATABASE_URL: postgresql+asyncpg://growthpilot:growthpilot@postgres:5432/growthpilot
+      REDIS_URL: redis://redis:6379/0
+      DEV_MODE: "false"
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: kimi-k2.5:cloud
+      OLLAMA_API_KEY: db44fd430e994c9a820dea394beac4fa.5sT3ca2ozXVVdHbf6y4GJ4qj
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  beat:
+    build:
+      context: ./backend
+    command: celery -A app.tasks beat --loglevel=info
+    volumes:
+      - ./backend:/app
+    environment:
+      DATABASE_URL: postgresql+asyncpg://growthpilot:growthpilot@postgres:5432/growthpilot
+      REDIS_URL: redis://redis:6379/0
+      DEV_MODE: "false"
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: kimi-k2.5:cloud
+      OLLAMA_API_KEY: db44fd430e994c9a820dea394beac4fa.5sT3ca2ozXVVdHbf6y4GJ4qj
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  pgdata:

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GrowthPilot AI | Dashboard</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container": "#eceef0",
+                        "inverse-surface": "#2d3133",
+                        "outline": "#747686",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#1d4ed8",
+                        "on-background": "#191c1e",
+                        "primary-fixed": "#dce1ff",
+                        "tertiary": "#7f2500",
+                        "on-secondary-fixed": "#001a42",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-tertiary-fixed-variant": "#832700",
+                        "outline-variant": "#c4c5d7",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-primary-fixed": "#001551",
+                        "on-secondary-container": "#fefcff",
+                        "on-secondary-fixed-variant": "#004395",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#cad3ff",
+                        "primary": "#0037b0",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "surface-bright": "#f7f9fb",
+                        "surface-tint": "#2151da",
+                        "on-surface-variant": "#434655",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-container": "#ffc9b7",
+                        "surface-container-high": "#e6e8ea",
+                        "on-surface": "#191c1e",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#a73400",
+                        "on-primary-fixed-variant": "#0039b5",
+                        "secondary-container": "#2170e4",
+                        "surface": "#f7f9fb",
+                        "surface-dim": "#d8dadc",
+                        "background": "#f7f9fb",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-variant": "#e0e3e5",
+                        "secondary": "#0058be",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#b7c4ff",
+                        "on-tertiary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50">Kebab Haus X</span>
+<span class="px-3 py-1 bg-slate-200/50 dark:bg-slate-800/50 text-slate-500 rounded-full text-xs font-semibold">Casual</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex gap-8 items-center font-manrope font-bold text-lg">
+<a class="text-blue-700 dark:text-blue-400 font-semibold" href="#">Dashboard</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-2 py-1 rounded" href="#">Missions</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-2 py-1 rounded" href="#">Analytics</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-slate-200">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="professional portrait of a confident middle-aged business owner in a clean modern office setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNEA_lnkTn4x32CsF3lA69Gp1vCDhKOqnBlutc0WPHpLt9pU1jF43ti2TsmevherY7iIx5MZ9jTJbVS42shiXvmkRaeyGr_bdaBJ-dq_fHVna2rn4cyJ9VpIoADI57yRLS4jGtwgyqOmHxaRU39Vq6LXZBlOKhuCd0YMSGIbI30jUwdxDTjor26xDWcrT4maSSH6OOiX7FQAR08QSHbuJWi1i9YRO29mh9yF_lkZGAmEfrgzPf_4QTNwsYHLRVx0c0I5obvZMbVgg8"/>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Hidden on small screens) -->
+<aside class="h-screen w-64 fixed left-0 top-0 pt-20 hidden md:flex flex-col gap-2 p-4 bg-slate-50 dark:bg-slate-950">
+<div class="mb-8 px-2">
+<h2 class="text-lg font-bold text-slate-900 dark:text-slate-50">GrowthPilot AI</h2>
+<p class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">Premium Growth Engine</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-slate-900 text-blue-700 dark:text-blue-400 shadow-sm rounded-lg font-inter text-sm font-medium transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">dashboard</span> Dashboard
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg font-inter text-sm font-medium transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">rocket_launch</span> Missions
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg font-inter text-sm font-medium transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">insights</span> Growth Analytics
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg font-inter text-sm font-medium transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">memory</span> AI Execution
+            </a>
+<a class="flex items-center gap-3 p-3 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg font-inter text-sm font-medium transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">tactic</span> Strategy
+            </a>
+</nav>
+</aside>
+<!-- NavigationDrawer (Execution Panel) -->
+<div class="fixed right-0 top-0 h-screen w-80 z-[60] bg-white dark:bg-slate-900 flex flex-col p-6 h-full shadow-2xl shadow-slate-200/50 dark:shadow-none hidden lg:flex">
+<div class="mb-8">
+<h3 class="font-bold text-slate-900 text-xl">AI Content Execution</h3>
+<p class="text-sm text-slate-500">Drafting &amp; Deployment</p>
+</div>
+<div class="flex flex-col gap-6 h-full">
+<div class="flex-1 bg-surface-container-low rounded-xl p-4 flex flex-col">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-blue-700 tracking-wider">DRAFTING BLOG</span>
+<span class="material-symbols-outlined text-slate-400 text-sm">edit_note</span>
+</div>
+<div class="text-sm text-on-surface-variant leading-relaxed overflow-y-auto">
+<p class="font-bold mb-2">Title: Why Tuesday Lunch at Kebab Haus X is the local secret.</p>
+<p>Tuesday lunch doesn't have to be a boring sandwich at your desk. At Kebab Haus X, we've perfected the mid-week fuel-up. Our slow-roasted meats and fresh-baked flatbreads are exactly what you need to conquer the rest of the week...</p>
+<p class="mt-4">From our signature garlic sauce to the perfectly charred skewers, every bite is a testament to authentic flavors...</p>
+</div>
+</div>
+<button class="w-full py-4 bg-gradient-to-br from-primary to-primary-container text-white rounded-lg font-bold flex items-center justify-center gap-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined text-base">content_copy</span>
+                Copy to Clipboard
+            </button>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="md:pl-64 lg:pr-80 pt-24 pb-12 px-8 min-h-screen">
+<div class="max-w-5xl mx-auto">
+<!-- Hero Section: Weekly Goal Card -->
+<section class="mb-12">
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex-1">
+<span class="text-sm font-bold text-blue-600 tracking-widest uppercase mb-2 block">Weekly Focus</span>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-on-surface mb-4">WIN TUESDAY LUNCH TRAFFIC</h1>
+<p class="text-on-surface-variant text-lg">Targeting 45% increase in footfall between 11:00 AM and 2:00 PM through local outreach.</p>
+</div>
+<div class="relative w-40 h-40 flex items-center justify-center">
+<!-- Simplified progress ring using SVG -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-low" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary-container" cx="80" cy="80" fill="transparent" r="70" stroke="currentColor" stroke-dasharray="440" stroke-dashoffset="150" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-3xl font-extrabold text-on-surface">66%</span>
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Complete</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Body: Mission Cards -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold tracking-tight">Active Missions</h2>
+<span class="text-sm text-slate-500 font-medium">3 Missions Pending</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Mission 1: Google Maps -->
+<div class="bg-surface-container-lowest rounded-xl p-6 flex flex-col h-full hover:shadow-md transition-shadow group">
+<div class="mb-6 flex justify-between items-start">
+<div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-600">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<span class="px-3 py-1 bg-green-50 text-green-700 text-[10px] font-bold uppercase rounded-full">Done</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Google Maps Update</h3>
+<p class="text-sm text-on-surface-variant mb-6 flex-1">Updated holiday hours and added 5 high-resolution photos of the new Kebab Platter.</p>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Updated 2h ago</span>
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+</div>
+</div>
+<!-- Mission 2: Local Blog Post -->
+<div class="bg-surface-container-lowest rounded-xl p-6 flex flex-col h-full ring-2 ring-primary-container/20 shadow-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2">
+<div class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></div>
+</div>
+<div class="mb-6 flex justify-between items-start">
+<div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600">
+<span class="material-symbols-outlined">article</span>
+</div>
+<span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full">Active</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Local Blog Post</h3>
+<p class="text-sm text-on-surface-variant mb-6 flex-1">AI has generated a draft for the 'Mid-week Fuel' blog post. Ready for your review.</p>
+<button class="w-full py-3 bg-primary-container text-white rounded-lg text-sm font-bold active:scale-95 transition-transform">
+                            Open Asset Panel
+                        </button>
+</div>
+<!-- Mission 3: Review Request -->
+<div class="bg-surface-container-low rounded-xl p-6 flex flex-col h-full border border-dashed border-outline-variant/30 group">
+<div class="mb-6 flex justify-between items-start">
+<div class="w-12 h-12 bg-slate-200/50 rounded-lg flex items-center justify-center text-slate-500">
+<span class="material-symbols-outlined">rate_review</span>
+</div>
+<span class="px-3 py-1 bg-slate-200 text-slate-600 text-[10px] font-bold uppercase rounded-full">Pending</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Review Request</h3>
+<p class="text-sm text-on-surface-variant mb-6 flex-1">Send SMS campaign to 24 customers from the weekend to collect feedback.</p>
+<div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Next: Schedule</span>
+<span class="material-symbols-outlined text-slate-400">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Custom Growth Insights (Editorial Section) -->
+<section class="mt-16 bg-surface-container-high rounded-2xl overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<div class="flex-1 p-10">
+<h2 class="text-3xl font-extrabold tracking-tighter mb-4">Precision Targeting</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">Our AI identified that your Tuesday lunch dip is caused by a lack of visibility in the nearby 'Central Business Park'. We recommend a direct mailer or a sponsored LinkedIn post targeting local office managers.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="#">
+                            View Targeting Strategy <span class="material-symbols-outlined">trending_up</span>
+</a>
+</div>
+<div class="flex-1 min-h-[300px]">
+<img class="w-full h-full object-cover" data-alt="high-angle shot of a vibrant mediterranenan kebab wrap on a clean white table with soft morning shadows and professional food styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1At9pEdDsz1DYgwvr9wJSh-uKEKthuM3w0Fr2A_0V07Y_kd8RMc0sCK23PVg_tWJgRAs4hqHXki1ebc1ndmvA_Dm7tGxLQIJ0cuAu1TsmEdkX_dsjKtxEXB5cF-GmzUHJZ8TYAPOY_W9lIJJVE3Rpz7Hg5VwKCtZzCEmdJRPoHuv-Rz4ZNj5tJIxy0rWogBfXqMVOJRChbDmijk_5aLmi_SnAGLJJeKmSx5BC1JXpU_rCWi-g477Tq_plGw-Vnm-Emq-ziMtpyYx3"/>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 h-20 bg-white/80 backdrop-blur-xl flex items-center justify-around px-4 z-50 border-t border-slate-100">
+<a class="flex flex-col items-center gap-1 text-blue-700" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-[10px] font-bold">DASHBOARD</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="text-[10px] font-bold">MISSIONS</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span class="text-[10px] font-bold">GROWTH</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold">PROFILE</span>
+</a>
+</nav>
+</body></html>

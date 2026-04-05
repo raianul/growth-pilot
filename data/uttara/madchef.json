@@ -1,0 +1,1152 @@
+{
+  "search_metadata": {
+    "id": "69d15dda71a41d5af1c98930",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/uer5uYKLFrZLkHkXpo-EYA/69d15dda71a41d5af1c98930.json",
+    "pixel_position_endpoint": "https://serpapi.com/searches/uer5uYKLFrZLkHkXpo-EYA/69d15dda71a41d5af1c98930.json_with_pixel_position",
+    "created_at": "2026-04-04 18:52:10 UTC",
+    "processed_at": "2026-04-04 18:52:10 UTC",
+    "google_url": "https://www.google.com/search?q=Madchef+Uttara&oq=Madchef+Uttara&uule=w+CAIQICIaQXVzdGluLFRleGFzLFVuaXRlZCBTdGF0ZXM&hl=en&gl=bd&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/uer5uYKLFrZLkHkXpo-EYA/69d15dda71a41d5af1c98930.html",
+    "total_time_taken": 1.39
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "Madchef Uttara",
+    "location_requested": "Austin, Texas, United States",
+    "location_used": "Austin,Texas,United States",
+    "google_domain": "google.com",
+    "hl": "en",
+    "gl": "bd",
+    "device": "desktop"
+  },
+  "search_information": {
+    "query_displayed": "Madchef Uttara",
+    "total_results": 4270,
+    "time_taken_displayed": 0.71,
+    "organic_results_state": "Results for exact spelling",
+    "results_for": "Uttara, Dhaka"
+  },
+  "knowledge_graph": {
+    "title": "Madchef Uttara",
+    "type": "Fast food restaurant",
+    "entity_type": "local_nav",
+    "kgmid": "/g/11cn64hqnx",
+    "knowledge_graph_search_link": "https://www.google.com/search?kgmid=/g/11cn64hqnx&hl=en-BD&q=Madchef+Uttara",
+    "serpapi_knowledge_graph_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en-BD&kgmid=%2Fg%2F11cn64hqnx&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara",
+    "place_id": "ChIJ20dMKBTEVTcRGhouHTkqMP4",
+    "website": "http://madchef.com.bd/",
+    "reviews": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOahX1PbQENjvgpFGTXThJIfcxHTnym6SBLDf61GOeTZY0D1rt8uEF60LTvFFkwwfJw1RF0KFlO_XR_MPZzhqaXwTBtAa&q=Madchef+Uttara+Reviews&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ0bkNegQIQhAH",
+    "description": "Low-key restaurant specializing in fusion burgers, poutine & grilled-cheese sandwiches, plus shakes.",
+    "local_map": {
+      "image": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/i60WthcvSq8XAsB3DPnijf2w6u5OwuScJndxPpBlHNU.webp",
+      "link": "https://www.google.com/maps/place/Madchef+Uttara/data=!4m2!3m1!1s0x0:0xfe302a391d2e1a1a?sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ_BJ6BAhLEAA&hl=en&gl=bd"
+    },
+    "rating": 4.1,
+    "review_count": 1885,
+    "price": "৳400–600",
+    "price_details": {
+      "distribution": [
+        {
+          "price": "৳200–400",
+          "percentage": 13.888889
+        },
+        {
+          "price": "৳400–600",
+          "percentage": 41.666668
+        },
+        {
+          "price": "৳600–800",
+          "percentage": 13.888889
+        },
+        {
+          "price": "৳800–1,000",
+          "percentage": 9.259259
+        },
+        {
+          "price": "৳1,000–1,200",
+          "percentage": 8.333333
+        }
+      ],
+      "total_reported": 108
+    },
+    "address": "House No, 4th Floor, Jewel Tower, 34 Gareeb-e-Newaz Ave, Dhaka 1230",
+    "address_links": [
+      {
+        "text": "Address",
+        "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=madchef+uttara+address&ludocid=18316186109306870298&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ6BN6BAg6EAI"
+      }
+    ],
+    "phone": "09638-050505",
+    "phone_links": [
+      {
+        "text": "Phone",
+        "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=madchef+uttara+phone&ludocid=18316186109306870298&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ6BN6BAg-EAI"
+      }
+    ],
+    "menu": "drive.google.com",
+    "menu_links": [
+      {
+        "text": "drive.google.com",
+        "link": "https://drive.google.com/file/d/14rZL_h7-fPX5-Mc3FlaJgMqY5AfOQDOx/view?usp=sharing"
+      }
+    ],
+    "raw_hours": "Closed · Opens 11 AM",
+    "hours": {
+      "sunday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "monday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "tuesday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "wednesday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "thursday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "friday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      },
+      "saturday": {
+        "opens": "11 AM",
+        "closes": "11 PM"
+      }
+    },
+    "popular_times": {
+      "live": {
+        "time": "9 PM",
+        "info": "Usually as busy as it gets"
+      },
+      "graph_results": {
+        "monday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 28
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 38
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 44
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 51
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 53
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 59
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 63
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 70
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 81
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 90
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 87
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 67
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "tuesday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 30
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 42
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 50
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 50
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 53
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 56
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 64
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 70
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 74
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 77
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 78
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 64
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "wednesday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 33
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 43
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 51
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 58
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 57
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 63
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 74
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 84
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 90
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 88
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 82
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 67
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "thursday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 34
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 48
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 57
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 59
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 60
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 59
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 65
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 69
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 75
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 85
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 88
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 79
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "friday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not busy",
+            "busyness_score": 14
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 22
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 32
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 39
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 45
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 49
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 58
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 66
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 78
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 89
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 93
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 76
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "saturday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 22
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 29
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 39
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually not too busy",
+            "busyness_score": 47
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 54
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 63
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 74
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 83
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 92
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 99
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 100
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 85
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ],
+        "sunday": [
+          {
+            "time": "6 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "7 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "8 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "9 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "10 AM",
+            "busyness_score": 0
+          },
+          {
+            "time": "11 AM",
+            "info": "Usually not too busy",
+            "busyness_score": 46
+          },
+          {
+            "time": "12 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 61
+          },
+          {
+            "time": "1 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 69
+          },
+          {
+            "time": "2 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 68
+          },
+          {
+            "time": "3 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 64
+          },
+          {
+            "time": "4 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 62
+          },
+          {
+            "time": "5 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 65
+          },
+          {
+            "time": "6 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 70
+          },
+          {
+            "time": "7 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 76
+          },
+          {
+            "time": "8 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 85
+          },
+          {
+            "time": "9 PM",
+            "info": "Usually as busy as it gets",
+            "busyness_score": 90
+          },
+          {
+            "time": "10 PM",
+            "info": "Usually a little busy",
+            "busyness_score": 76
+          },
+          {
+            "time": "11 PM",
+            "busyness_score": 0
+          }
+        ]
+      }
+    },
+    "profiles": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/madchefbd/",
+        "image": "https://ssl.gstatic.com/kpui/social/instagram_32x32.png"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/paglababurchi",
+        "image": "https://ssl.gstatic.com/kpui/social/fb_32x32.png"
+      },
+      {
+        "name": "YouTube",
+        "link": "https://www.youtube.com/channel/UCG-9KcMvfmj-ziNBQ3EcsDQ",
+        "image": "https://ssl.gstatic.com/kpui/social/youtube_32x32.png"
+      },
+      {
+        "name": "TikTok",
+        "link": "https://www.tiktok.com/@madchefbd",
+        "image": "https://ssl.gstatic.com/kpui/social/tiktok_32x32.png"
+      }
+    ]
+  },
+  "inline_images": [
+    {
+      "source": "https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/-BtxR8eKL7FFAiYeFPOVhTKKWl67eV3igw8LBaBPVYc.jpeg",
+      "original": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/94/7d/8b/img-20200112-193544-largejpg.jpg?w=500&h=-1&s=1",
+      "title": "MADCHEF, Uttara - Restaurant Reviews, Photos & Phone Number ...",
+      "source_name": "Tripadvisor"
+    },
+    {
+      "source": "https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/o22ETm7smZkE-ltj7KfjEQUJoOssYknq_YSZLA-FNWk.jpeg",
+      "original": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/c6/35/b8/img-20180921-235530-largejpg.jpg?w=1000&h=1000&s=1",
+      "title": "MADCHEF, Uttara - Restaurant Reviews, Photos & Phone Number ...",
+      "source_name": "Tripadvisor"
+    },
+    {
+      "source": "https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/LudBokDIzqgNdNccXhP9QIrpWSbxwu3bkXVIF3KKk_U.jpeg",
+      "original": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/c6/35/b9/img-20180922-000040-largejpg.jpg?w=1100&h=1100&s=1",
+      "title": "MADCHEF, Uttara - Restaurant Reviews, Photos & Phone Number ...",
+      "source_name": "Tripadvisor"
+    }
+  ],
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Madchef (@madchefbd)",
+      "link": "https://www.facebook.com/madchefbd/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/madchefbd/&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECBkQAQ",
+      "displayed_link": "204K+ followers",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFtFWf2NVt8-xmySNLHLAQ-k.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFrrM-o_5bFQkzhKQ-lnQAoI.png",
+      "snippet": "Our ৳699 platter is our gift of flavor to you. ✨ Call 09638-050505 to reserve your meal or get MAD iftar platters to-go. IFTAR PLATTER 1 — ৳699 Egg Fried ...",
+      "snippet_highlighted_words": [
+        "Call 09638-050505"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Our ৳699 platter is our gift of flavor to you. ✨ Call 09638-050505 to reserve your meal or get MAD iftar platters to-go. IFTAR PLATTER 1 — ৳699 Egg Fried ...",
+          "source_info_link": "https://www.facebook.com/madchefbd/",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFuIjf_EjKxu-wu1WEjB8g3UPgq9Xx3WlUxPkHAIfaxlb.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.facebook.com/madchefbd/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.facebook.com%2Fmadchefbd%2F",
+      "source": "Facebook · Madchef"
+    },
+    {
+      "position": 2,
+      "title": "Dhaka-তে Madchef - Uttara ডেলিভারি",
+      "link": "https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECBIQAQ",
+      "displayed_link": "https://www.foodpanda.com.bd › ...",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFgYnMGF6L3fFWTYQNrhMyIo.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFvDPx1q5P5R5-CeadfXS5nk.png",
+      "snippet": "Madchef - Uttara · আপনার জন্য প্রযোজ্য ডিল · জনপ্রিয় · ভোজনরসিকরা যা বলেন · Teasers · Crispy Chicken · All Things · Poutine · Gourmet Burger ...",
+      "snippet_highlighted_words": [
+        "Madchef - Uttara"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.9,
+            "reviews": 14182,
+            "price_range": "৳৳৳"
+          },
+          "extensions": [
+            "4.9(14,182)",
+            "Price range: ৳৳৳"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Madchef - Uttara · আপনার জন্য প্রযোজ্য ডিল · জনপ্রিয় · ভোজনরসিকরা যা বলেন · Teasers · Crispy Chicken · All Things · Poutine · Gourmet Burger ...",
+          "source_info_link": "https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFh2jDt4UzB8W7ABYqpjZbkjJSnzzex-e5uTa3OCmTsAG.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.foodpanda.com.bd%2Fbn%2Frestaurant%2Fs9vx%2Fmadchef-uttara",
+      "source": "Foodpanda.com.bd"
+    },
+    {
+      "position": 3,
+      "title": "MADCHEF, Uttara - Restaurant Reviews, Photos & Phone ...",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECBAQAQ",
+      "displayed_link": "https://www.tripadvisor.com › ... › Uttara Restaurants",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFpHJGe_8x4TsZ8EWqUcDLSw.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFpLN9mZ4DEP83CpyptJydlA.png",
+      "snippet": "17/A, very near to the Banani Super Market. They mainly provide Fast Food, Sea Food, Burger, Sandwich and Steak etc. We tried their Chicken Steak Meal served ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.3,
+            "reviews": 12,
+            "price_range": "$$-$$$"
+          },
+          "extensions": [
+            "4.3(12)",
+            "Price range: $$ - $$$"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "17/A, very near to the Banani Super Market. They mainly provide Fast Food, Sea Food, Burger, Sandwich and Steak etc. We tried their Chicken Steak Meal served ...",
+          "source_info_link": "https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFgs1j1xGIQrBV9IFJk_H50IBZgNdKl2TH7pmB_WdDGSC.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.tripadvisor.com/Restaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.tripadvisor.com%2FRestaurant_Review-g3350980-d12765633-Reviews-Madchef-Uttara_Dhaka_Division.html",
+      "source": "Tripadvisor"
+    },
+    {
+      "position": 4,
+      "title": "Madchef - MapQuest",
+      "link": "https://www.mapquest.com/bd/madchef-526357170",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.mapquest.com/bd/madchef-526357170&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECBEQAQ",
+      "displayed_link": "https://www.mapquest.com › madchef-526357170",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFrkAIl9YD_5RhtljyM_3xPg.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFt9fguusJaYHzTRpq7wJrWQ.png",
+      "snippet": "\"Rustic, Modern, Chic Fusion Restaurant! Steaks, Hot & Cold Beverage! Music & Magazines. Separate Smo...\" VP2505(2).",
+      "about_this_result": {
+        "source": {
+          "description": "\"Rustic, Modern, Chic Fusion Restaurant! Steaks, Hot & Cold Beverage! Music & Magazines. Separate Smo...\" VP2505(2).",
+          "source_info_link": "https://www.mapquest.com/bd/madchef-526357170",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFtXsRl1jQgoVXBDR8Wfw1GOrPgD-3c4XESuQds3XDfuX.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.mapquest.com/bd/madchef-526357170&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.mapquest.com%2Fbd%2Fmadchef-526357170",
+      "source": "MapQuest"
+    },
+    {
+      "position": 5,
+      "title": "🔥Madchef (@madchefbd) • Instagram photos and videos",
+      "link": "https://www.instagram.com/madchefbd/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/madchefbd/&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECHAQAQ",
+      "displayed_link": "17.4K+ followers",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFlTs-lIO5rJnFd2oi7URyS4.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFma1wxdINIZyJHdLzCbiIHg.png",
+      "snippet": "Call 09638-050505 to reserve your meal or get MAD iftar platters to-go. IFTAR PLATTER 1 — ৳699 Egg Fried Rice, Fried Egg, Chicken Satay, Soy Garlic Fried ...",
+      "snippet_highlighted_words": [
+        "Call 09638-050505"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Call 09638-050505 to reserve your meal or get MAD iftar platters to-go. IFTAR PLATTER 1 — ৳699 Egg Fried Rice, Fried Egg, Chicken Satay, Soy Garlic Fried ...",
+          "source_info_link": "https://www.instagram.com/madchefbd/",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFoEa65WGwR_guu7SVXXuMgAYH8mi46G_3d_BUrgIjdub.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.instagram.com/madchefbd/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.instagram.com%2Fmadchefbd%2F",
+      "source": "Instagram · madchefbd"
+    },
+    {
+      "position": 6,
+      "title": "Madchef Uttara | Fast Food Haven in Dhaka",
+      "link": "https://madchef-uttara.menufyy.com/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://madchef-uttara.menufyy.com/&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECHUQAQ",
+      "displayed_link": "https://madchef-uttara.menufyy.com",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFkbrj-jy7bjBol1TBRyl6P4.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFgpCggnFk2AlkoNfYTq0E8I.png",
+      "snippet": "Situated on the 4th floor of Jewel Tower in Uttara, Madchef Uttara offers a distinct take on fast food that tries to merge rich flavors with a casual dining ...",
+      "snippet_highlighted_words": [
+        "Situated on the 4th floor of Jewel Tower in Uttara"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Situated on the 4th floor of Jewel Tower in Uttara, Madchef Uttara offers a distinct take on fast food that tries to merge rich flavors with a casual dining ...",
+          "source_info_link": "https://madchef-uttara.menufyy.com/",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFuaffTgInTSIo53luKXy6s-K4adPFiiIxOeM_eM97_Ls.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://madchef-uttara.menufyy.com/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fmadchef-uttara.menufyy.com%2F",
+      "source": "menufyy.com"
+    },
+    {
+      "position": 7,
+      "title": "রিভিউ Madchef - Uttara",
+      "link": "https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara/reviews",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara/reviews&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECG8QAQ",
+      "displayed_link": "https://www.foodpanda.com.bd › ...",
+      "thumbnail": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFpygpAU1DNJtQlVpRAlM7ic.jpeg",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFrAzjEFAeyFCz3Ba8vkKlaM.png",
+      "snippet": "Madchef - Uttara এর রিভিউ foodpanda-এ ডেলিভারি এবং পিক-আপের জন্য Madchef - Uttara এর সমস্ত নিরপেক্ষ রিভিউ দেখুন.",
+      "snippet_highlighted_words": [
+        "Madchef",
+        "Uttara",
+        "Madchef",
+        "Uttara"
+      ],
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "rating": 4.9,
+            "reviews": 14163,
+            "price_range": "৳৳৳"
+          },
+          "extensions": [
+            "4.9(14,163)",
+            "Price range: ৳৳৳"
+          ]
+        }
+      },
+      "about_this_result": {
+        "source": {
+          "description": "Madchef - Uttara এর রিভিউ foodpanda-এ ডেলিভারি এবং পিক-আপের জন্য Madchef - Uttara এর সমস্ত নিরপেক্ষ রিভিউ দেখুন.",
+          "source_info_link": "https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara/reviews",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFiCjZSX7TJiqBPayq7prqkXYj4aHYBXdPQ9kVWdkk0wA.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.foodpanda.com.bd/bn/restaurant/s9vx/madchef-uttara/reviews&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.foodpanda.com.bd%2Fbn%2Frestaurant%2Fs9vx%2Fmadchef-uttara%2Freviews",
+      "source": "Foodpanda.com.bd"
+    },
+    {
+      "position": 8,
+      "title": "Madchef - Chef's Table BD: Order Online on Pathao Food!",
+      "link": "https://food.pathao.com/restaurants/gyzdqoa/madchef",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://food.pathao.com/restaurants/gyzdqoa/madchef&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECGoQAQ",
+      "displayed_link": "https://food.pathao.com › restaurants › gyzdqoa › madchef",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFsyLBtcnqkVDkgkMP5x1EOY.png",
+      "snippet": "Madchef - Chef's Table BD. Unimart, Level 2, Road 90, Gulshan 2. Burger; Fast Food. Delivery ৳40 ৳60. Classic Burgers; Gourmet Burgers; Poutine Platters ...",
+      "snippet_highlighted_words": [
+        "Madchef"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Madchef - Chef's Table BD. Unimart, Level 2, Road 90, Gulshan 2. Burger; Fast Food. Delivery ৳40 ৳60. Classic Burgers; Gourmet Burgers; Poutine Platters ...",
+          "source_info_link": "https://food.pathao.com/restaurants/gyzdqoa/madchef",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFljPhGYsRFjE70CSruH0yN9KabYCxKTyfU_rTT3PKB19.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://food.pathao.com/restaurants/gyzdqoa/madchef&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Ffood.pathao.com%2Frestaurants%2Fgyzdqoa%2Fmadchef",
+      "source": "Pathao Food"
+    },
+    {
+      "position": 9,
+      "title": "Madchef Uttara",
+      "link": "https://www.bdtradeinfo.com/company/madchef-uttara-48103/",
+      "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bdtradeinfo.com/company/madchef-uttara-48103/&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQFnoECGkQAQ",
+      "displayed_link": "https://www.bdtradeinfo.com › Yellow Pages",
+      "favicon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFgyEFlbBi2EAex2OX4gKZDA.png",
+      "snippet": "Madchef Uttara, Restaurant, Open now: 11AM–11PM, https://madchef.com.bd/. To add your company in BD Trade Info Yellow Pages simply click here.",
+      "snippet_highlighted_words": [
+        "Madchef Uttara, Restaurant"
+      ],
+      "about_this_result": {
+        "source": {
+          "description": "Madchef Uttara, Restaurant, Open now: 11AM–11PM, https://madchef.com.bd/. To add your company in BD Trade Info Yellow Pages simply click here.",
+          "source_info_link": "https://www.bdtradeinfo.com/company/madchef-uttara-48103/",
+          "icon": "https://serpapi.com/searches/69d15dda71a41d5af1c98930/images/Qzi3EDQyy87t2zKI94HlFkqLiYKQVPKl39sn6OvXTFrCoIKk4TrT1sogg4l1GvSp.png"
+        },
+        "languages": [
+          "en"
+        ],
+        "regions": [
+          "BD"
+        ]
+      },
+      "about_page_link": "https://www.google.com/search?q=About+https://www.bdtradeinfo.com/company/madchef-uttara-48103/&tbm=ilp",
+      "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&q=About+https%3A%2F%2Fwww.bdtradeinfo.com%2Fcompany%2Fmadchef-uttara-48103%2F",
+      "source": "BD Trade Info"
+    }
+  ],
+  "menu_highlights": [],
+  "related_searches": [
+    {
+      "block_position": 1,
+      "query": "Madchef uttara menu",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+uttara+menu&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhjEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+uttara+menu"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef uttara location",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+uttara+location&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhoEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+uttara+location"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef menu",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+menu&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhnEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+menu"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef uttara reviews",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+uttara+reviews&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhmEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+uttara+reviews"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef Bailey Road",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+Bailey+Road&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhlEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Bailey+Road"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef Khilgaon",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+Khilgaon&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhkEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Khilgaon"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef Banani",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+Banani&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhhEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Banani"
+    },
+    {
+      "block_position": 1,
+      "query": "Madchef Dhanmondi",
+      "link": "https://www.google.com/search?sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&q=Madchef+Dhanmondi&sa=X&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ1QJ6BAhiEAE",
+      "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Dhanmondi"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=10&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8NMDegQIDRAO",
+    "other_pages": {
+      "2": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=10&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8tMDegQIDRAE",
+      "3": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=20&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8tMDegQIDRAG",
+      "4": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=30&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8tMDegQIDRAI",
+      "5": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=40&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8tMDegQIDRAK",
+      "6": "https://www.google.com/search?q=Madchef+Uttara&sca_esv=f5da5a3948d0bae5&gl=bd&hl=en&ei=2l3Raeq4Ke7dptQPkvK1wAE&start=50&sa=N&sstk=Af77f_c5FhjWWbfGfesj4rORitOFjzienUrtsPL68euuxwyfMUF1TJVhFigQyA-rdmt0kNEpK2PmMO_GJu7CRXcjajnV1aASyE9gKA&ved=2ahUKEwjqjejy7tSTAxXurokEHRJ5DRgQ8tMDegQIDRAM"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=bd&google_domain=google.com&hl=en&location=Austin%2C+Texas%2C+United+States&q=Madchef+Uttara&start=50"
+    }
+  }
+}
