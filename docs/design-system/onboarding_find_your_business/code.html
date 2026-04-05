@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GrowthPilot AI - Step 1</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#0039b5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2d3133",
+              "on-primary-fixed": "#001551",
+              "primary-container": "#1d4ed8",
+              "on-tertiary-fixed-variant": "#832700",
+              "surface-dim": "#d8dadc",
+              "surface-container-low": "#f2f4f6",
+              "on-surface-variant": "#434655",
+              "on-secondary-container": "#fefcff",
+              "surface-tint": "#2151da",
+              "on-primary-container": "#cad3ff",
+              "tertiary": "#7f2500",
+              "surface": "#f7f9fb",
+              "on-tertiary-fixed": "#390c00",
+              "secondary-container": "#2170e4",
+              "error-container": "#ffdad6",
+              "outline": "#747686",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c1e",
+              "secondary-fixed-dim": "#adc6ff",
+              "secondary-fixed": "#d8e2ff",
+              "on-error": "#ffffff",
+              "primary-fixed": "#dce1ff",
+              "on-secondary": "#ffffff",
+              "background": "#f7f9fb",
+              "surface-container-highest": "#e0e3e5",
+              "on-secondary-fixed": "#001a42",
+              "inverse-primary": "#b7c4ff",
+              "on-error-container": "#93000a",
+              "surface-container": "#eceef0",
+              "secondary": "#0058be",
+              "inverse-on-surface": "#eff1f3",
+              "tertiary-container": "#a73400",
+              "outline-variant": "#c4c5d7",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffdbcf",
+              "surface-bright": "#f7f9fb",
+              "primary": "#0037b0",
+              "surface-variant": "#e0e3e5",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ffc9b7",
+              "tertiary-fixed-dim": "#ffb59c",
+              "on-secondary-fixed-variant": "#004395",
+              "primary-fixed-dim": "#b7c4ff",
+              "on-background": "#191c1e",
+              "surface-container-high": "#e6e8ea"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #0037b0 0%, #1d4ed8 100%);
+      }
+      .ghost-border {
+        border: 1px solid rgba(116, 118, 134, 0.15);
+      }
+      .tonal-elevation {
+        box-shadow: 0 40px 60px -20px rgba(25, 28, 30, 0.04);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+<!-- Top Navigation (Shell Suprpressed for Transactional Context per Rules) -->
+<header class="w-full px-8 h-20 flex items-center justify-between bg-transparent">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-xl signature-gradient flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<span class="font-headline font-extrabold text-xl tracking-tighter text-primary">GrowthPilot AI</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-on-surface-variant font-label text-sm">Step 1 of 3</span>
+<div class="w-24 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-1/3 h-full signature-gradient rounded-full"></div>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center px-6 py-12">
+<div class="w-full max-auto max-w-2xl text-center">
+<!-- Hero Content -->
+<div class="mb-12">
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface tracking-tight mb-4">
+                    Find your Business
+                </h1>
+<p class="text-on-surface-variant text-lg max-w-lg mx-auto leading-relaxed">
+                    Connect your profile to start leveraging AI-driven growth strategies tailored to your specific location.
+                </p>
+</div>
+<!-- Main Input Module -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl tonal-elevation ghost-border relative overflow-hidden">
+<!-- Subtle decorative background element -->
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col gap-6">
+<div class="relative">
+<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full h-16 pl-14 pr-6 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all text-on-surface placeholder:text-outline font-body text-lg" placeholder="Enter Google Maps URL or Business Name" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+<div class="p-4 rounded-lg bg-surface-container-low/50 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Precision</span>
+<p class="text-xs text-on-surface-variant/80">Connect directly via verified Maps data.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/50 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-xl">auto_awesome</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Analysis</span>
+<p class="text-xs text-on-surface-variant/80">AI scans reviews and visibility metrics.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/50 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-xl">insights</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Growth</span>
+<p class="text-xs text-on-surface-variant/80">Get immediate actionable benchmarks.</p>
+</div>
+</div>
+<button class="w-full h-14 signature-gradient text-on-primary font-headline font-bold rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-all transform active:scale-[0.98] shadow-lg shadow-primary/20">
+                        Next
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Trust Indicators -->
+<div class="mt-12 flex flex-wrap justify-center items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Partner Logo" class="h-6" data-alt="minimalist professional tech company logo in slate grey on transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-i5hJhLPro2WiQjg8XWGYWboCz0cLsF28hojYQiINj62VRRqngRuMEPFoGC507svEER5hung8LG9rmo-1SIRz0IUXMWoA0pZs6vNA5y3SoQkbJhpeSl9EUrORy-ZZE9M_OEyGtq78LoRPATjOWibCjKk4V6Q46V6FktRKKwBWTejnq024kMq3beb7F-0ft2TrMNio7beg5q3uOPpbgAjwBhrC1FseHSrcHa7RYwUMdRY-hpNWqK39l75StZIBgcf4somRrCUId48y"/>
+<img alt="Partner Logo" class="h-6" data-alt="sleek corporate brand logo architectural style in dark navy blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4iGwvXuFeFVtD8SaU4nu5rui0g4g3iJTLp9rKr-YdCe_szXApFZDKGvAPl_5UsGrjzhbo4siYGw4LTP_jy_twS-mXqAY6sZnzr3xk-2j5zk5nRgkBHqiFDTn34JytRNiogjNsdqiQfGHt4KTOiSWvugrHMf_0cPxF0zm-FLjVELDMfnsNmq3R1FQGT-RK-tN3TQFkjEsyMGevI7FRJ7cVSxpiq9M3VCqgIjJpucx5u-7mObzJ-8FsjGeUztXSJvFhJoewXICPLOki"/>
+<img alt="Partner Logo" class="h-6" data-alt="modern abstract geometric software logo in charcoal grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjbCLdHCRlb_XJngXLfCdlievg8y1IBm04VQqdNl7CVEkrmhu6Fl6z2jfpkjVpbWNBkcOLz_lgTgjShn3C_Ip4CWBmSEr7z2WLZAuMgopiKzhb95Z_tsXTiSyrYS-DluiHm4S2bEEH9is2bj3pWpb-80d4Wm1fplp3-v7OLxE6F4TZGbOYC4MppqY-oWx44QMeWWF2vHh_np-Q8NVaCf9fCkV4ezYfK2swWoQcblWDaK7pw31TaBDQ8I6aNy7KMGqjcFi_4U5trroo"/>
+</div>
+</div>
+</main>
+<!-- Footer (Using Shell Logic) -->
+<footer class="w-full py-8 flex justify-center gap-8 text-xs font-label text-outline mt-auto">
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+<span class="ml-4">© 2024 Azure Meridian Precision Architect</span>
+</footer>
+</body></html>
