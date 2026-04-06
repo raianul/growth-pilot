@@ -51,6 +51,7 @@ class Settings(BaseSettings):
     app_url: str = "http://localhost:5173"
     landing_url: str = "http://localhost:5174"
     api_url: str = "http://localhost:8000"
+    kothaykhabo_url: str = "http://localhost:5175"
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 

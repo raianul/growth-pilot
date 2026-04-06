@@ -10,6 +10,7 @@ from app.api.v1.competitors import router as competitors_router
 from app.api.v1.billing import router as billing_router
 from app.api.v1.free_audit import router as free_audit_router
 from app.api.v1.businesses import router as businesses_router
+from app.api.v1.discover import router as discover_router
 
 router = APIRouter()
 router.include_router(organizations_router)
@@ -21,6 +22,7 @@ router.include_router(competitors_router)
 router.include_router(billing_router)
 router.include_router(free_audit_router)
 router.include_router(businesses_router)
+router.include_router(discover_router)
 
 if settings.dev_mode:
     from app.api.v1.dev import router as dev_router
